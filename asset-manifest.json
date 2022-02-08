@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/CargoFe/static/css/main.ab03d080.chunk.css",
+    "main.js": "/CargoFe/static/js/main.afe76c9e.chunk.js",
+    "main.js.map": "/CargoFe/static/js/main.afe76c9e.chunk.js.map",
+    "runtime~main.js": "/CargoFe/static/js/runtime~main.93ab11ae.js",
+    "runtime~main.js.map": "/CargoFe/static/js/runtime~main.93ab11ae.js.map",
+    "static/css/2.86aa6515.chunk.css": "/CargoFe/static/css/2.86aa6515.chunk.css",
+    "static/js/2.760751c7.chunk.js": "/CargoFe/static/js/2.760751c7.chunk.js",
+    "static/js/2.760751c7.chunk.js.map": "/CargoFe/static/js/2.760751c7.chunk.js.map",
+    "index.html": "/CargoFe/index.html",
+    "precache-manifest.4cfa2d974da9dab3b82930ff759f634d.js": "/CargoFe/precache-manifest.4cfa2d974da9dab3b82930ff759f634d.js",
+    "service-worker.js": "/CargoFe/service-worker.js",
+    "static/css/2.86aa6515.chunk.css.map": "/CargoFe/static/css/2.86aa6515.chunk.css.map",
+    "static/css/main.ab03d080.chunk.css.map": "/CargoFe/static/css/main.ab03d080.chunk.css.map",
+    "static/media/crgLogo.jpg": "/CargoFe/static/media/crgLogo.b735f358.jpg",
+    "static/media/home.css": "/CargoFe/static/media/ship.6b5a922f.jpg"
+  }
+}
