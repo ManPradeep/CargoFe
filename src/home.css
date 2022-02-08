@@ -1,0 +1,70 @@
+html,body {
+    position:relative;
+    margin:0;
+    padding:0;
+    overflow:auto;
+}
+.footerbar { 
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    color: white;
+    background-color:darkolivegreen;
+    font-size: 12px;
+    padding:1em;
+}
+.logWidth{width:80px;margin-left: 0px;}
+.logWidth1{width:200px;}
+.cover{ background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:700px;
+    width: 100%;
+    background-image: url('./images/ship.jpg');
+    -z-index:-1;
+}
+a:hover{background-color: lightblue;}
+nav{font-size:20px;font-weight: 100;color: lightyellow;}
+iframe{margin-top:0px;width: 100%;height: 100%;}
+
+.height{height:700px;width:800px;margin-left:20%;margin-right:20%;}
+
+td, th{border:0.1px solid black;text-align:center;padding:5px;}
+table{padding-top:10px;
+    margin-left: auto;  
+margin-right: auto;  
+border-collapse: collapse;    
+width: 500px;  
+text-align: center;background:lightcyan;border-collapse: collapse;}
+  
+th, td {
+    text-align: center;
+    padding: 8px;
+    font-size:13px;
+}
+  th{background-color: mediumaquamarine;font-size:12px;}
+  .th1{background-color: rgb(61, 61, 2);color:white;border:1px solid rgb(61, 61, 2);font-size: 18px;font-family: 'Courier New', Courier, monospace;}
+tr:nth-child(odd) {
+    background-color: rgb(233, 241, 233);}
+
+.box{padding-top:10px;
+    margin-left: auto;  
+margin-right: auto;  
+width: 500px;  
+text-align: left;
+background-color: whitesmoke;
+margin-top:0%;
+padding:1em;
+border-radius: 10px;
+margin-top: auto;
+border:4px solid darkolivegreen;
+}
+h5.center{text-align: center;background-color: orange;padding: 5px;margin-top:-3px;}
+Note{
+    padding-top:5em;
+    padding: 5px;
+}
+Note span{
+    background-color: yellow;
+    padding: 10px;
+}

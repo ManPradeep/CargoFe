@@ -1,0 +1,11 @@
+.stop-watch{
+    padding-top: 2em;
+    height: 18vh;
+	width: 18vw;
+	background-color: #0d0c1b;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+    padding:15px;
+}

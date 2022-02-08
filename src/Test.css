@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@500&display=swap");
+
+.body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+* {
+  font-family: "Verdana", cursive, sans-serif;
+  color: #0e0101;
+}
+
+.body {
+  background: url("http://superdevresources.com/wp-content/uploads/2014/02/pattern-background.png");
+  font-family: "Bree Serif", serif;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+padding-left: 25%;
+text-align: center;
+}
+
+.header{
+  text-align: left;
+  color: black;
+  padding-top: 1em;
+  padding-bottom: 0.2em;
+}
+
+.app {
+  background: linear-gradient(5deg, #80a8f1 0%, #e5f5a0 100%);
+  width: 55%;
+  min-height: 200px;
+  height: min-content;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.score-section {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+}
+
+/* QUESTION/TIMER/LEFT SECTION */
+.question-section {
+  width: 100%;
+  position: relative;
+}
+
+.question-count {
+  margin-bottom: 20px;
+}
+
+.question-count span {
+  font-size: 28px;
+}
+
+.question-text {
+  margin-bottom: 12px;
+}
+
+
+/* ANSWERS/RIGHT SECTION */
+.answer-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+button {
+  width: 100%;
+  font-size: 16px;
+  color: #3d0a0a;
+  background: linear-gradient( #cab096 0%, #e4e0e2 100%);
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  margin: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  border: 3px solid #234668;
+  cursor: pointer;
+}
+
+
+button:hover {
+  background-color: #1b295c;
+}
+
+button:focus {
+  outline: none;
+}
+
+button svg {
+  margin-right: 5px;
+}
+
+.button{margin-top: -15%;
+    display: flex;
+    justify-content: right;
+    margin-right: 15%;
+}
+.left
+{
+  text-align: left;
+  }
