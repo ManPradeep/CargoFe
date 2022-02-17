@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./StopWatch.css";
 import Timer from "./Timer";
 import ControlButtons from "./ControlButtons";
-import Test from "./Test";
 function StopWatch() {
 const [isActive, setIsActive] = useState(false);
 const [isPaused, setIsPaused] = useState(true);

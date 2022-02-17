@@ -3,20 +3,10 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Nav.css';
 import './home.css';
 import { BrowserRouter } from "react-router-dom";
-import { Navbar, NavDropdown, Nav, input, button, form } from 'react-bootstrap';
+import { Navbar, NavDropdown, Nav} from 'react-bootstrap';
 import ReactGa from 'react-ga';
 import aptLogo from './images/aptLogo.png';
 import crgLogo from './images/crgLogo.jpg';
-import Overveiw from './Overveiw';
-import Liveproduction from './Liveproduction';
-import Reporttemp from './Reporttemp';
-import Iops from './Iops';
-import Contactus from './Contactus';
-import Localcharges from './Localcharges';
-import Reportiop from './Reportiop';
-import MrpBulk from './MrpBulk';
-import EditionUsrMnl from './EditionUsrMnl';
-
 const Navpoint = () => {
   useEffect(()=>{
 ReactGa.initialize('G-QP8QRFDRZE')

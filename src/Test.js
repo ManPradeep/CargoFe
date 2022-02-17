@@ -2,263 +2,489 @@ import React, { useState } from 'react';
 import './Test.css';
 import StopWatch from './StopWatch';
 function Test() {
-
   const questions = [
-    {
-      questionText: '1. WHO IS CARGO FE ',
-      answerOptions: [
-        { answerText: 'SHIPPING LINE', isCorrect: false },
-        { answerText: 'CARRIER', isCorrect: true },
-        { answerText: 'FREIGHT FORWARDER', isCorrect: false },
-        { answerText: 'OCEAN FORWARDER', isCorrect: true },
-      ]
-},
 {	
-questionText: '2. CFS STAND FOR',
+  id:1,
+	questionText:'CFS STAND FOR',
       answerOptions: [
         { answerText: 'CARGO FEE STATION', isCorrect: false },
-        { answerText: 'CONTAINER FEE STATION', isCorrect: true },
+        { answerText: 'CONTAINER FEE STATION', isCorrect: false },
         { answerText: 'CARGO YARD STATION', isCorrect: false },
         { answerText: 'CONTAINER FREIGHT STATION', isCorrect: true },
       ],
     },
 {
-      questionText: '3. CY STAND FOR',
+	id:2,
+	questionText:'CY STAND FOR',
       answerOptions: [
         { answerText: 'CARGO YARD', isCorrect: false },
-        { answerText: 'CARRIER YARD', isCorrect: true },
+        { answerText: 'CARRIER YARD', isCorrect: false },
         { answerText: 'CARGO SHIPPING YARD', isCorrect: false },
         { answerText: 'CONTAINER YARD', isCorrect: true },
       ],
     },
 {
-      questionText: '4. OF STAND FOR',
+	id:3,
+	questionText:'OF STAND FOR',
       answerOptions: [
         { answerText: 'OCENIA FREIGHT', isCorrect: false },
-        { answerText: 'ORGIN FREIGHT', isCorrect: true },
+        { answerText: 'ORGIN FREIGHT', isCorrect: false },
         { answerText: 'OCEAN FORWARDER', isCorrect: false },
         { answerText: 'OCEAN FREIGHT', isCorrect: true },
       ],
     },
 {
-      questionText: '5. IGM STAND FOR',
+	id:4,
+	questionText:'IGM STAND FOR',
       answerOptions: [
         { answerText: 'IMPORT GENERATE MANIFEST', isCorrect: false },
-        { answerText: 'IMPORT GENERATE MECHANISM', isCorrect: true },
         { answerText: 'IMPORT GR MECHANISM', isCorrect: false },
         { answerText: 'IMPORT GENERAL MANIFEST', isCorrect: true },
+        { answerText: 'IMPORT GENERATE MECHANISM', isCorrect: true },
       ],
     },
 {
-      questionText: '6. RMB STAND FOR',
+	id:5,
+	questionText:'RMB STAND FOR',
       answerOptions: [
         { answerText: 'RIN MIN BE', isCorrect: false },
-        { answerText: 'RIN MIN BEE', isCorrect: true },
         { answerText: 'REN MINN BI', isCorrect: false },
         { answerText: 'REN MIN BI', isCorrect: true },
+        { answerText: 'RIN MIN BEE', isCorrect: true },
       ],
     },
 {
-      questionText: '7. CRO STAND FOR',
+	id:6,
+	questionText:'CRO STAND FOR',
       answerOptions: [
         { answerText: 'CARGO RELEASE ORDER', isCorrect: false },
-        { answerText: 'CARGO REAL ORDER', isCorrect: true },
         { answerText: 'CARRIER RELEASE ORDER', isCorrect: false },
         { answerText: 'CONTAINER RELEASE ORDER', isCorrect: true },
+        { answerText: 'CARGO REAL ORDER', isCorrect: true },
       ],
     },
 {
-      questionText: '8. FO STAND FOR',
+	id:7,
+	questionText:'FO STAND FOR',
       answerOptions: [
         { answerText: 'FEE OUT', isCorrect: false },
-        { answerText: 'FREGHT OUT', isCorrect: true },
         { answerText: 'FREIGHT ORIGIN', isCorrect: false },
         { answerText: 'FREE OUT', isCorrect: true },
+        { answerText: 'FREGHT OUT', isCorrect: true },
       ],
     },
 {
-      questionText: '9. FOB STAND FOR ',
+	id:8,
+	questionText:'FOB STAND FOR ',
       answerOptions: [
         { answerText: 'FEE ON BOARD', isCorrect: false },
-        { answerText: 'FREGHT ON BOARD', isCorrect: true },
         { answerText: 'FREE ON BORAD', isCorrect: false },
         { answerText: 'FREE ON BOARD', isCorrect: true },
+        { answerText: 'FREGHT ON BOARD', isCorrect: true },
       ],
     },
 {
-      questionText: '10. CIF STAND FOR',
+	id:9,
+	questionText:'CIF STAND FOR',
       answerOptions: [
         { answerText: 'CARRIER IMPORT FREIGHT', isCorrect: false },
-        { answerText: 'CARRIER IMPORT FEE', isCorrect: true },
         { answerText: 'COST IMPORT FREIGHT', isCorrect: false },
         { answerText: 'COST INSURANCE FREIGHT', isCorrect: true },
+        { answerText: 'CARRIER IMPORT FEE', isCorrect: true },
       ],
     },
 {
-      questionText: '11. ROW STAND FOR',
+	id:10,
+	questionText:'ROW STAND FOR',
       answerOptions: [
         { answerText: 'RAST OF WORLD', isCorrect: false },
-        { answerText: 'REAL OF WORLD', isCorrect: true },
         { answerText: 'REVENUE OF WORLD', isCorrect: false },
         { answerText: 'REST OF WORLD', isCorrect: true },
+        { answerText: 'REAL OF WORLD', isCorrect: true },
       ],
     },
 {
-      questionText: '12. ISF STAND FOR',
+	id:11,
+	questionText:'ISF STAND FOR',
       answerOptions: [
         { answerText: 'IMPORT SECURITY FILING', isCorrect: false },
-        { answerText: 'IMPORT SECURITY FILLING', isCorrect: true },
         { answerText: 'IMPORT SERVICE FILE', isCorrect: false },
         { answerText: 'IMPORTER SECURITY FILING', isCorrect: true },
+        { answerText: 'IMPORT SECURITY FILLING', isCorrect: true },
       ],
     },
 {
-      questionText: '13. AMS STAND FOR',
+	id:12,
+	questionText:'AMS STAND FOR',
       answerOptions: [
         { answerText: 'AUTOMATE MICRO SYSTEM', isCorrect: false },
-        { answerText: 'AUTOMATING MANIFEST SERVICE', isCorrect: true },
         { answerText: 'AUTOMATED MICRO SERVICE', isCorrect: false },
         { answerText: 'AUTOMATED MANIFEST SYSTEM', isCorrect: true },
+        { answerText: 'AUTOMATING MANIFEST SERVICE', isCorrect: true },
       ],
     },
 {
-      questionText: '14. ACI STAND FOR',
+	id:13,
+	questionText:'ACI STAND FOR',
       answerOptions: [
         { answerText: 'AUTOMATED CARGO IDENTITY', isCorrect: false },
-        { answerText: 'AUTOMATING CARRIER INFORMATION', isCorrect: true },
         { answerText: 'ADVANCED CARGO IDENTITY', isCorrect: false },
         { answerText: 'ADVANCED CARGO INFORMATION', isCorrect: true },
+        { answerText: 'AUTOMATING CARRIER INFORMATION', isCorrect: true },
       ],
     },
 {
-      questionText: '15. FCL STAND FOR',
+	id:14,
+	questionText:'FCL STAND FOR',
       answerOptions: [
         { answerText: 'FIT CONTAINER LEVEL', isCorrect: false },
-        { answerText: 'FULL CONTAINER LEVEL', isCorrect: true },
         { answerText: 'FOOD CONTAINER LOW', isCorrect: false },
         { answerText: 'FULL CONTAINER LOAD', isCorrect: true },
+        { answerText: 'FULL CONTAINER LEVEL', isCorrect: true },
       ],
     },
 {
-      questionText: '16. OBL STAND FOR ',
+	id:15,
+	questionText:'OBL STAND FOR ',
       answerOptions: [
         { answerText: 'OCEAN BILL OF LADING', isCorrect: false },
-        { answerText: 'OUTER BILL OF LADING', isCorrect: true },
         { answerText: 'ORIGIN BILL OF LADING', isCorrect: false },
         { answerText: 'ORIGINAL BILL OF LADING', isCorrect: true },
+        { answerText: 'OUTER BILL OF LADING', isCorrect: true },
       ],
     },
 {
-      questionText: '17. SO STAND FOR',
+	id:16,
+	questionText:'SO STAND FOR',
       answerOptions: [
         { answerText: 'SHIPMENT ORDER', isCorrect: false },
-        { answerText: 'SHIP ORDER', isCorrect: true },
         { answerText: 'SHIPPING BILL ORDER', isCorrect: false },
         { answerText: 'SHIPPING ORDER', isCorrect: true },
+        { answerText: 'SHIP ORDER', isCorrect: true },
       ],
     },
 {
-      questionText: '18. LC STAND FOR ',
+	id:17,
+	questionText:'LC STAND FOR ',
       answerOptions: [
         { answerText: 'LOW CONTAINER', isCorrect: false },
-        { answerText: 'LEVEL OF CREDIT', isCorrect: true },
         { answerText: 'LETTER OF CARGO', isCorrect: false },
         { answerText: 'LETTER OF CREDIT', isCorrect: true },
+        { answerText: 'LEVEL OF CREDIT', isCorrect: true },
       ],
     },
 {
-      questionText: '19. MBL ISSUED BY',
+	id:18,
+	questionText:'MBL ISSUED BY',
       answerOptions: [
         { answerText: 'AIR FORWARER', isCorrect: false },
-        { answerText: 'CHA', isCorrect: true },
         { answerText: 'OCEAN FORWARDER', isCorrect: false },
         { answerText: 'CARRIER', isCorrect: true },
+        { answerText: 'CHA', isCorrect: true },
       ],
     },
 {
-      questionText: '20. THC STAND FOR ',
+	id:19,
+	questionText:'THC STAND FOR ',
       answerOptions: [
         { answerText: 'TERMINAL HAOULAGE CHARGES', isCorrect: false },
-        { answerText: 'TIRE HANDLING CHARGES', isCorrect: true },
         { answerText: 'TERMINAL HEAVY CHARGE', isCorrect: false },
         { answerText: 'TERMINAL HANDLING CHARGES', isCorrect: true },
+        { answerText: 'TIRE HANDLING CHARGES', isCorrect: true },
       ],
     },
 {
-      questionText: '21. DAP STAND FOR ',
+	id:20,
+	questionText:'DAP STAND FOR ',
       answerOptions: [
         { answerText: 'DUTY AT PLACE', isCorrect: false },
-        { answerText: 'DUTY  AT PORT', isCorrect: true },
         { answerText: 'DELIVERY AT PAID', isCorrect: false },
         { answerText: 'DELIVERED AT PLACE', isCorrect: true },
+        { answerText: 'DUTY  AT PORT', isCorrect: true },
       ],
     },
 {
-      questionText: '22. WHICH OF THE FOLLOWING IS AN INLAND PORT',
+	id:21,
+	questionText:'WHICH OF THE FOLLOWING IS AN INLAND PORT',
       answerOptions: [
         { answerText: 'NHAVA SHEVA', isCorrect: false },
-        { answerText: 'TUGHLAKABAD (TKD)', isCorrect: true },
         { answerText: 'DELHI AIR CARGO', isCorrect: false },
         { answerText: 'BOMBAY AIR CARGO', isCorrect: true },
+        { answerText: 'TUGHLAKABAD (TKD)', isCorrect: true },
       ],
     },
 {
-      questionText: '23. WHO IS PREPARATION OF MBL',
+	id:22,
+	questionText:'WHO IS PREPARATION OF MBL',
       answerOptions: [
         { answerText: 'CHA', isCorrect: false },
-        { answerText: 'FORWARDER', isCorrect: true },
         { answerText: 'SHIPPER', isCorrect: false },
         { answerText: 'LINER', isCorrect: true },
+        { answerText: 'FORWARDER', isCorrect: true },
       ],
     },
 {
-      questionText: '24. BO STAND FOR',
+	id:23,
+	questionText:'BO STAND FOR',
       answerOptions: [
         { answerText: 'BANKING ORDER', isCorrect: false },
-        { answerText: 'BILL ORDER', isCorrect: true },
         { answerText: 'BRANCH OFFICE', isCorrect: false },
         { answerText: 'BOOKING ORDER', isCorrect: true },
+        { answerText: 'BILL ORDER', isCorrect: true },
       ],
     },
 {
-      questionText: '25. HOW MANY DIGIT OF COMPANY CODES IN EDISON',
+	id:24,
+	questionText:'HOW MANY DIGIT OF COMPANY CODES IN EDISON',
       answerOptions: [
         { answerText: '6 AND 7', isCorrect: false },
-        { answerText: '5 AND 8', isCorrect: true },
         { answerText: '4 AND 5', isCorrect: false },
         { answerText: '6 AND 8', isCorrect: true },
+        { answerText: '5 AND 8', isCorrect: true },
       ],
     },
 {
-      questionText: '26. HBL ISSUED BY',
+	id:25,
+	questionText:'HBL ISSUED BY',
       answerOptions: [
         { answerText: 'CHA', isCorrect: false },
-        { answerText: 'LINER', isCorrect: true },
         { answerText: 'SHIPPER', isCorrect: false },
         { answerText: 'FORWARDER', isCorrect: true },
+        { answerText: 'LINER', isCorrect: true },
       ],
     },
 {
-      questionText: '27. GUANGZHOU STAND FOR',
+	id:26,
+	questionText:'GUANGZHOU STAND FOR',
       answerOptions: [
         { answerText: 'TAO', isCorrect: false },
-        { answerText: 'NGB', isCorrect: true },
         { answerText: 'SHA', isCorrect: false },
         { answerText: 'CAN', isCorrect: true },
+        { answerText: 'NGB', isCorrect: true },
       ],
     },
 {
-      questionText: '28. SOB STAND FOR',
+	id:27,
+	questionText:'SOB STAND FOR',
       answerOptions: [
         { answerText: 'SHIPPER ON BOARD', isCorrect: false },
-        { answerText: 'SHIPPER OF BOOKING', isCorrect: true },
         { answerText: 'SECURITY OF BOOKING', isCorrect: false },
         { answerText: 'SHIPPED ON BOARD', isCorrect: true },
+        { answerText: 'SHIPPER OF BOOKING', isCorrect: true },
+      ],
+},
+{
+	id:28,
+	questionText:'WHAT IS THE PRE-ALERT',
+      answerOptions: [
+        { answerText: 'FINAL LOAD PLAN', isCorrect: false },
+        { answerText: 'FINAL VESSEL', isCorrect: false },
+        { answerText: 'FINAL MBL', isCorrect: false },
+        { answerText: 'FINAL HBL', isCorrect: true },
+      ],
+},
+{
+	id:29,
+	questionText:'WHO iS SEND THE FINAL PRE-ALERT',
+      answerOptions: [
+        { answerText: 'SHIPPER', isCorrect: false },
+        { answerText: 'BUYER', isCorrect: false },
+        { answerText: 'CARRER', isCorrect: false },
+        { answerText: 'FORWARDER', isCorrect: true },
+      ],
+},
+{
+	id:30,
+	questionText:'WHO IS RELEASE THE "D.O"',
+      answerOptions: [
+        { answerText: 'FORWARDER', isCorrect: false },
+        { answerText: 'SHIPPER', isCorrect: false },
+        { answerText: 'CONSIGNEE', isCorrect: false },
+        { answerText: 'DESTINATION AGENT', isCorrect: true },
+      ],
+},
+{
+	id:31,
+	questionText:'WHO IS ISSUED THE INV & PL',
+      answerOptions: [
+        { answerText: 'BOOKED BY', isCorrect: false },
+        { answerText: 'FORWARDER', isCorrect: false },
+        { answerText: 'CONSIGNEE', isCorrect: false },
+        { answerText: 'SHIPPER', isCorrect: true },
+      ],
+},
+{
+	id:32,
+	questionText:'WHAT TIME SHOULD WE DO "AMS" FILE',
+      answerOptions: [
+        { answerText: 'BEFORE 12 HOURS', isCorrect: false },
+        { answerText: 'BEFORE 24 HOURS', isCorrect: false },
+        { answerText: 'BEFORE 48 HOURS', isCorrect: false },
+        { answerText: 'BEFORE 72 HOURS', isCorrect: true },
+      ],
+},
+{
+	id:33,
+	questionText:'HOW MUCH PENALTY IS LEVIED FOR WRONG DOING "AMS"',
+      answerOptions: [
+        { answerText: 'USD 3000', isCorrect: false },
+        { answerText: 'RMB 3000', isCorrect: false },
+        { answerText: 'RMB 5000', isCorrect: false },
+        { answerText: 'USD 5000', isCorrect: true },
+      ],
+},
+{
+	id:34,
+	questionText:'WHO IS RESPONSIBLE FOR THE DELAYING "AMS"',
+      answerOptions: [
+        { answerText: 'SHIPPER', isCorrect: false },
+        { answerText: 'LINER', isCorrect: false },
+        { answerText: 'CARRIER', isCorrect: false },
+        { answerText: 'FORWARDER', isCorrect: true },
+      ],
+},
+{
+	id:35,
+	questionText:'WHAT TIME SHOULD WE DO "ISF" FILE',
+      answerOptions: [
+        { answerText: 'BEFORE 12 HOURS', isCorrect: false },
+        { answerText: 'BEFORE 24 HOURS', isCorrect: false },
+        { answerText: 'BEFORE 36 HOURS', isCorrect: false },
+        { answerText: 'BEFORE 48 HOURS', isCorrect: true },
+      ],
+},
+{
+	id:36,
+	questionText:'WHO IS RESPONSIBLE FOR THE DELAYING "ISF"',
+      answerOptions: [
+        { answerText: 'SHIPPER', isCorrect: false },
+        { answerText: 'LINER', isCorrect: false },
+        { answerText: 'CARRIER', isCorrect: false },
+        { answerText: 'FORWARDER', isCorrect: true },
+      ],
+},
+{
+	id:37,
+	questionText:'WHO IS ISSUED BY THE ORIGINAL NEGOTIABLE BL AND NON-NEGOTIABLE BL',
+      answerOptions: [
+        { answerText: 'SHIPPER', isCorrect: false },
+        { answerText: 'LINER', isCorrect: false },
+        { answerText: 'CARRIER', isCorrect: false },
+        { answerText: 'SELLER SHIPPER AGENT', isCorrect: true },
+      ],
+},
+{
+	id:38,
+	questionText:'WHO IS ISSUED BY THE C.R.O.',
+      answerOptions: [
+        { answerText: 'SHIPPER', isCorrect: false },
+        { answerText: 'CONSIGNEE', isCorrect: false },
+        { answerText: 'DESITINATION AGENT', isCorrect: false },
+        { answerText: 'SHIPPING LINE', isCorrect: true },
+      ],
+},
+{
+	id:39,
+	questionText:'WHO IS ISSUED THE SHIPPING INSTRUCTION',
+      answerOptions: [
+        { answerText: 'CARRIER', isCorrect: false },
+        { answerText: 'CONSIGNEE', isCorrect: false },
+        { answerText: 'BOOKED BY', isCorrect: false },
+        { answerText: 'SHIPPER', isCorrect: true },
+      ],
+},
+{
+	id:40,
+	questionText:'THE TIME AT WHICH A SHIP, CARGO IS EXPECTED TO DEPART FROM A CERTAIN PORT/TERMINAL IS CALLED',
+      answerOptions: [
+        { answerText: 'ATD ', isCorrect: false },
+        { answerText: 'ETD', isCorrect: false },
+        { answerText: 'ETA', isCorrect: false },
+        { answerText: 'A AND B', isCorrect: true },
+      ],
+},
+{
+	id:41,
+	questionText:'USED WHEN THERE IS A DISCREPANCY BETWEEN DESCRIPTION IN B/L AND ACTUAL GOODS IS CALLED',
+      answerOptions: [
+        { answerText: 'CLEAN B/L', isCorrect: false },
+        { answerText: 'SOB B/L', isCorrect: false },
+        { answerText: 'DISCREPANCY B/L', isCorrect: false },
+        { answerText: 'CLAUSE B/L', isCorrect: true },
+      ],
+},
+{
+	id:42,
+	questionText:'THIS ENDORSMENT MEANS THAT THE CARRIER HAS RECEIVED AND LOADED GOODS PHYSICALLY THE VESSEL',
+      answerOptions: [
+        { answerText: 'CLEAN B/L', isCorrect: false },
+        { answerText: 'CLAUSE B/L', isCorrect: false },
+        { answerText: 'TELEX B/L', isCorrect: false },
+        { answerText: 'SOB B/L', isCorrect: true },
+      ],
+},
+{
+	id:43,
+	questionText:'USED WHEN THERE IS NO DISCREPANCY BETWEEN DESCRIPTION IN B/L AND ACTUAL GOODS IS CALLED',
+      answerOptions: [
+        { answerText: 'FARE B/L', isCorrect: false },
+        { answerText: 'SOB B/L', isCorrect: false },
+        { answerText: 'CLAUSE B/L', isCorrect: false },
+        { answerText: 'CLEAN B/L', isCorrect: true },
+      ],
+},
+{
+	id:44,
+	questionText:'ONE VESSEL TRANSPORTS AND DELIVERS GOODS AT THE FINAL DESTINATION IS CALLED',
+      answerOptions: [
+        { answerText: 'TELEX B/L', isCorrect: false },
+        { answerText: 'SURRENDER B/L', isCorrect: false },
+        { answerText: 'ORDER B/L', isCorrect: false },
+        { answerText: 'DIRECT B/L', isCorrect: true },
+      ],
+},
+{
+	id:45,
+	questionText:'WHEN GOODS ARE SOLD ON TRADE CREDIT IS CALLED',
+      answerOptions: [
+        { answerText: 'CLEAN B/L', isCorrect: false },
+        { answerText: 'CLAUSE B/L', isCorrect: false },
+        { answerText: 'SURRENDER B/L', isCorrect: false },
+        { answerText: 'ORDER B/L', isCorrect: true },
+      ],
+},
+{
+	id:46,
+	questionText:'GOODS WILL SHIP BEFORE PAYMENT IN RECEIVED',
+      answerOptions: [
+        { answerText: 'CLEAN B/L', isCorrect: false },
+        { answerText: 'SOB B/L', isCorrect: false },
+        { answerText: 'DISCREPANCY B/L', isCorrect: false },
+        { answerText: 'ORDER B/L', isCorrect: true },
+      ],
+},
+{
+	id:47,
+	questionText:'CARRIER RECEIVED PAYMENT IN ADVANCE ',
+      answerOptions: [
+        { answerText: 'CLEAN B/L', isCorrect: false },
+        { answerText: 'SOB B/L', isCorrect: false },
+        { answerText: 'FARE B/L', isCorrect: false },
+        { answerText: 'STRAIGHT B/L', isCorrect: true },
       ],
     },
-
-  ]
-
+    {
+      id:48,
+      questionText:'WHO IS CARGO FE ',
+          answerOptions: [
+            { answerText: 'SHIPPING LINE', isCorrect: false },
+            { answerText: 'FREIGHT FORWARDER', isCorrect: false },
+            { answerText: 'OCEAN FORWARDER', isCorrect: true },
+            { answerText: 'CARRIER', isCorrect: true },
+          ]
+    },
+      ]
+  
   const [currentQuestion, setCurrentQuestion] = useState(0)
   const [showScore, setShowScore] = useState(false)
   const [score, setScore] = useState(0)
@@ -276,7 +502,7 @@ questionText: '2. CFS STAND FOR',
       setShowScore(true)
     }
   }
-
+  
   return (
 <div className='body'>
 <div className='left'>

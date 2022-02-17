@@ -5,7 +5,7 @@ export default class EditionUsrMnl extends Component {
     return (
         <div className='cover'>
         <div className='height'>
-          <iframe src="https://drive.google.com/file/d/1_KK3deWkdMdN5xcaRfIjVi1UtGZmqRsP/preview" width="640" height="480" allow="autoplay"></iframe>
+          <iframe title="watch" src="https://drive.google.com/file/d/1_KK3deWkdMdN5xcaRfIjVi1UtGZmqRsP/preview" width="640" height="480" allow="autoplay"></iframe>
     </div>
     </div>);
   }

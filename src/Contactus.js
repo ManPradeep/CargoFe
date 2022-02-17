@@ -55,7 +55,7 @@ export default class Contactus extends Component {
 </tr>
 </table>
 <br/><br/><br/>
-<Note><marquee><span>For any technical inhancement/suggesion please contact to Pradeep Maurya at <a href="mailto:crgfe.apt@gmail.com">crgfe.apt@gmail.com</a>.</span></marquee></Note>
+<Note><span>For any technical inhancement/suggesion please contact to Pradeep Maurya at <a href="mailto:crgfe.apt@gmail.com">crgfe.apt@gmail.com</a>.</span></Note>
 </div>
     );
   }
